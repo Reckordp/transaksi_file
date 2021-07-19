@@ -1,0 +1,16 @@
+<div class="pengumpul">
+  <%= form_tag({action: :upload}, multipart: true) do %>
+    <div class="kumpulan">
+      <div class="bagian"><%= file_field_tag 'File[]', multiple: true, class: "tombol" %></div>
+      <div class="bagian"><%= submit_tag 'kirim', class: "tombol" %></div>
+    </div>
+  <% end %>
+</div>
+
+<%= form_tag({action: :tulisan}) do %>
+	<div class="copas">
+			<%= text_area_tag(:tulisan, nil,  size: '50x10', placeholder: 'Masukkan kesini') %>
+			<br>
+			<%= submit_tag 'Langsung salin' %>
+	</div>
+<% end %>

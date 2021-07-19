@@ -1,0 +1,45 @@
+// Place all the styles related to the Bahan controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.kump_bahan {
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+
+.kump_bahan a {
+  text-decoration: none;
+}
+
+.bahan {
+  overflow: hidden;
+  width: 220px;
+  height: 220px;
+  padding: 25px;
+  margin: 10px;
+  border: thin solid black;
+  border-radius: 2em;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+  text-align: center;
+}
+
+.bahan .jenis {
+  border-bottom: solid thin black;
+  font-size: 4em;
+  color: lightgray;
+  height: 90%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+.bahan .nama {
+  padding-top: 5%;
+}

@@ -1,0 +1,10 @@
+<div class="kump_bahan">
+  <% @bahan.each do |nama, alm| %>
+    <%= link_to action: :kirim, kiriman: alm  do %>
+      <div class="bahan">
+        <div class="jenis"><%= File.extname nama %></div>
+        <div class="nama"><%= nama %></div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
